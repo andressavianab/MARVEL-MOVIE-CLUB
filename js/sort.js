@@ -1,0 +1,1 @@
+let chronology = document.querySelector('#btn-chronology')
