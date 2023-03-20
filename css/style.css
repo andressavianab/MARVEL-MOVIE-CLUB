@@ -145,6 +145,7 @@ img.poster-img {
 
 .hamburger-menu {
     visibility: hidden;
+    cursor: pointer;
 }
 
 .menu-h-filter {
@@ -162,6 +163,7 @@ img.poster-img {
 .close-menu-h {
   align-self: self-end;
   color: var(--dark-yellow);
+  cursor: pointer;
 }
 
 .menu-h-filter-buttons {
