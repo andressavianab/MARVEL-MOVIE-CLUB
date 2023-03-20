@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/png" sizes="32x32" rel="icon" href="https://www.pngmart.com/files/13/Avengers-A-Letter-Logo-PNG-Pic.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css"/>
-    <script src="/js/main.js" defer></script>
-    <script src="/js/forEach.js" defer></script>
     <title>Marvel Movie Club</title>
   </head>
   <body>
+    <div class="menu-h-filter">
+      <section class="close-menu-h">
+        <i class="fa fa-times-circle fa-4x" aria-hidden="true"></i>
+      </section>
+      <section class="menu-h-filter-buttons">
+          <button class="btn" id="btn-h-chronology">BY CHRONOLOGY</button>
+          <button class="btn" id="btn-h-boxOffice">BY BOX OFFICE</button>
+          <button class="btn" id="btn-h-nextReleases">Next Releases</button>
+      </section>
+    </div>
     <header>
       <section class="logo">
         <img
@@ -18,14 +27,13 @@
           src="/img/new-marvel-studios-logo-debuted-marvelstudios-3.png"
           alt="Marvel Studios Logo"/>
       </section>
-      <section class="hamburger-menu">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      </section>
+      <section class="hamburger-menu" id="hamburger-menu">
+        <i class="fa fa-bars fa-2x" aria-hidden="true" id="hambuger-menu-icon"></i>
+      </section>    
     </header>
     <main>
       <div class="container">
         <div class="menu-filter">
-          <button class="btn">ALL</button>
           <button class="btn" id="btn-chronology">BY CHRONOLOGY</button>
           <button class="btn" id="btn-boxOffice">BY BOX OFFICE</button>
           <button class="btn" id="btn-nextReleases">Next Releases</button>
@@ -34,5 +42,8 @@
             </div>
         </div>
     </main>
+    <script src="/js/main.js"></script>
+    <script src="/js/forEach.js"></script>
+    <script src="/js/filter.js"></script>
   </body>
 </html>
